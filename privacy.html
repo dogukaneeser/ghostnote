@@ -36,7 +36,7 @@
       </section>
 
       <article class="card doc" aria-labelledby="title">
-        <p class="meta"><strong>Last updated: 16 October 2026</strong> · Effective date: 30 October 2026</p>
+        <p class="meta"><strong>Last updated: 30 October 2026</strong> · Effective date: 30 October 2026</p>
 
         <p class="summary">GhostNote is a note-taking app for iPad. This policy explains what happens to your information when you use it. The short version: <strong>your notes stay on your iPad.</strong> GhostNote has no account, no server of its own, no analytics or tracking, no advertising and no third-party SDKs.</p>
 
@@ -45,7 +45,7 @@
             <li><a href="#device">1. Information stored on your device</a></li>
             <li><a href="#browser">2. The in-app browser</a></li>
             <li><a href="#permissions">3. Permissions</a></li>
-            <li><a href="#recognition">4. Handwriting and text recognition</a></li>
+            <li><a href="#recognition">4. Handwriting, text recognition and on-device intelligence</a></li>
             <li><a href="#purchases">5. Purchases (GhostNote Pro)</a></li>
             <li><a href="#sharing">6. Sharing and exporting</a></li>
             <li><a href="#analytics">7. Analytics, tracking and advertising</a></li>
@@ -86,23 +86,29 @@
           <li><strong>Camera</strong> — to take a photo to add to a page and to scan documents. Images are processed and stored on your device.</li>
           <li><strong>Photos</strong> — to add pictures from your library to notes or covers, and, if you choose, to save snips to your photo library.</li>
           <li><strong>Notifications</strong> — if you use a focus timer or countdown, GhostNote may ask to notify you when it ends. These are local notifications scheduled on your iPad; no push-notification service is used.</li>
+          <li><strong>Speech Recognition</strong> — to turn voice notes and recordings into text (transcripts). Transcription runs only on your iPad with Apple's on-device speech recognition; audio is never sent to a server. iPadOS may download the speech model for your language from Apple.</li>
+          <li><strong>Face ID / Touch ID</strong> — to lock the notebooks you choose. iPadOS handles the check; GhostNote never receives your face or fingerprint data, only whether unlocking succeeded.</li>
         </ul>
 
-        <h2 id="recognition"><span class="num">4.</span>Handwriting and text recognition</h2>
-        <p>Features such as handwriting to text, document scanning and recognising text in PDFs use Apple's on-device frameworks (Vision and VisionKit). The recognition runs on your iPad; your handwriting and documents are not sent anywhere.</p>
+        <h2 id="recognition"><span class="num">4.</span>Handwriting, text recognition and on-device intelligence</h2>
+        <p>Features such as handwriting to text, document scanning, Live Text and recognising text in PDFs use Apple's on-device frameworks (Vision and VisionKit). The recognition runs on your iPad; your handwriting and documents are not sent anywhere.</p>
+        <p><strong>Summaries, quizzes and “Ask my notes”</strong> use Apple's on-device language model (Apple Intelligence, Foundation Models framework) on iPads that support it. Your notes are processed on your iPad and are not sent to GhostNote or to any third party.</p>
+        <p><strong>Translation</strong> uses Apple's Translation framework. Translations run on your iPad once the language is downloaded; iPadOS downloads language packs from Apple.</p>
+        <p><strong>Apple system features</strong> such as Writing Tools, Genmoji and Image Playground are provided by iPadOS, not by GhostNote, and are covered by Apple's privacy policy. Apple states that some of these requests may be processed with Private Cloud Compute.</p>
 
         <h2 id="purchases"><span class="num">5.</span>Purchases (GhostNote Pro)</h2>
         <p>GhostNote Pro is sold through Apple's App Store using StoreKit. Apple processes the payment; GhostNote never sees your payment details or your Apple Account credentials. The app only receives, from Apple, whether a GhostNote Pro purchase or subscription is active on your account, and keeps that status on your iPad so Pro features keep working offline. Subscriptions are managed and cancelled in your App Store account settings. Apple's handling of purchase data is described in Apple's Privacy Policy.</p>
 
         <h2 id="sharing"><span class="num">6.</span>Sharing and exporting</h2>
         <p>When you export or share a notebook or page (PDF, image, print, Save to Files, AirDrop or another app), the content goes only where you send it. What happens next is governed by the receiving app or person.</p>
+        <p>PDF Studio's “Web page to PDF” loads the page directly from that website, just like the in-app browser.</p>
 
         <h2 id="analytics"><span class="num">7.</span>Analytics, tracking and advertising</h2>
         <p>GhostNote contains no analytics, advertising or tracking code, sends no crash reports of its own and does not track you across apps or websites. If you have chosen to share analytics with app developers in iPadOS settings, Apple may provide us with anonymous, aggregated statistics (such as crash counts) under Apple's own policy; these do not include your notes.</p>
         <p><strong>Diagnostic reports on your iPad.</strong> iPadOS can give apps technical reports about their own performance through Apple's MetricKit framework: hangs, crashes, launch times, battery, memory, CPU and disk-write use, and the related technical details (for example which part of the app's code was running). GhostNote saves the most recent of these reports (about 20) only on your iPad, in the app's private storage (Application Support › Diagnostics), so that a problem can be investigated if you ask for help. They contain no notes, handwriting, drawings, images, recordings, web pages or browsing history.</p>
         <ul>
           <li>These reports are <strong>never sent automatically</strong> — not to us and not to anyone else.</li>
-          <li>They leave your iPad only if you choose to share them yourself in <strong>Settings › About › Diagnostics</strong> with the system share sheet (for example by e-mail to support). After that, the recipient's handling applies.</li>
+          <li>They leave your iPad only if you choose to share them yourself in <strong>Settings › About › Diagnostics</strong> with the system share sheet (for example to attach them to a support request). After that, the recipient's handling applies.</li>
           <li>You can delete them at any time in the same place; deleting GhostNote removes them too. They are excluded from device backups.</li>
         </ul>
 

@@ -36,7 +36,7 @@
       </section>
 
       <article class="card doc" aria-labelledby="title">
-        <p class="meta"><strong>Son güncelleme: 16 Ekim 2026</strong> · Yürürlük tarihi: 30 Ekim 2026</p>
+        <p class="meta"><strong>Son güncelleme: 30 Ekim 2026</strong> · Yürürlük tarihi: 30 Ekim 2026</p>
 
         <p class="summary">GhostNote, iPad için bir not uygulamasıdır. Bu politika, uygulamayı kullanırken bilgilerine ne olduğunu açıklar. Kısacası: <strong>notların iPad'inde kalır.</strong> GhostNote'un hesabı, kendi sunucusu, analiz ya da izleme aracı, reklamı ve üçüncü taraf yazılım kiti (SDK) yoktur.</p>
 
@@ -45,7 +45,7 @@
             <li><a href="#device">1. Cihazında saklanan bilgiler</a></li>
             <li><a href="#browser">2. Uygulama içi tarayıcı</a></li>
             <li><a href="#permissions">3. İzinler</a></li>
-            <li><a href="#recognition">4. El yazısı ve metin tanıma</a></li>
+            <li><a href="#recognition">4. El yazısı, metin tanıma ve cihaz içi zekâ</a></li>
             <li><a href="#purchases">5. Satın almalar (GhostNote Pro)</a></li>
             <li><a href="#sharing">6. Paylaşma ve dışa aktarma</a></li>
             <li><a href="#analytics">7. Analiz, izleme ve reklam</a></li>
@@ -86,23 +86,29 @@
           <li><strong>Kamera</strong> — sayfaya eklemek üzere fotoğraf çekmek ve belge taramak için. Görüntüler cihazında işlenir ve saklanır.</li>
           <li><strong>Fotoğraflar</strong> — arşivindeki resimleri notlara ya da kapaklara eklemek ve istersen alıntıları fotoğraf arşivine kaydetmek için.</li>
           <li><strong>Bildirimler</strong> — odak zamanlayıcısı ya da geri sayım kullanırsan GhostNote, süre bitince sana haber vermek için izin isteyebilir. Bunlar iPad'inde zamanlanan yerel bildirimlerdir; anlık bildirim (push) servisi kullanılmaz.</li>
+          <li><strong>Konuşma Tanıma</strong> — sesli notları ve kayıtları yazıya dökmek için. Döküm yalnızca iPad'inde, Apple'ın cihaz üzerinde çalışan konuşma tanımasıyla yapılır; ses hiçbir sunucuya gönderilmez. iPadOS, dilinin konuşma modelini Apple'dan indirebilir.</li>
+          <li><strong>Face ID / Touch ID</strong> — seçtiğin defterleri kilitlemek için. Doğrulamayı iPadOS yapar; GhostNote yüz ya da parmak izi verini hiçbir zaman almaz, yalnızca kilidin açılıp açılmadığını öğrenir.</li>
         </ul>
 
-        <h2 id="recognition"><span class="num">4.</span>El yazısı ve metin tanıma</h2>
-        <p>El yazısını metne çevirme, belge tarama ve PDF'lerdeki metni tanıma gibi özellikler Apple'ın cihaz üzerinde çalışan çerçevelerini (Vision ve VisionKit) kullanır. Tanıma iPad'inde yapılır; el yazın ve belgelerin hiçbir yere gönderilmez.</p>
+        <h2 id="recognition"><span class="num">4.</span>El yazısı, metin tanıma ve cihaz içi zekâ</h2>
+        <p>El yazısını metne çevirme, belge tarama, Canlı Metin ve PDF'lerdeki metni tanıma gibi özellikler Apple'ın cihaz üzerinde çalışan çerçevelerini (Vision ve VisionKit) kullanır. Tanıma iPad'inde yapılır; el yazın ve belgelerin hiçbir yere gönderilmez.</p>
+        <p><strong>Özet, test ve “Notlarıma sor”</strong>, destekleyen iPad'lerde Apple'ın cihaz üzerinde çalışan dil modelini (Apple Intelligence, Foundation Models çerçevesi) kullanır. Notların iPad'inde işlenir; GhostNote'a ya da başka bir üçüncü tarafa gönderilmez.</p>
+        <p><strong>Çeviri</strong> Apple'ın Translation çerçevesini kullanır. Dil indirildikten sonra çeviriler iPad'inde yapılır; dil paketlerini iPadOS Apple'dan indirir.</p>
+        <p><strong>Apple'ın sistem özellikleri</strong> (Yazma Araçları, Genmoji, Image Playground gibi) GhostNote'un değil iPadOS'in özellikleridir ve Apple'ın gizlilik politikasına tabidir. Apple, bu isteklerin bir kısmının Private Cloud Compute ile işlenebileceğini belirtir.</p>
 
         <h2 id="purchases"><span class="num">5.</span>Satın almalar (GhostNote Pro)</h2>
         <p>GhostNote Pro, StoreKit aracılığıyla Apple'ın App Store'unda satılır. Ödemeyi Apple işler; GhostNote ödeme bilgilerini ya da Apple Hesabı bilgilerini hiçbir zaman görmez. Uygulama Apple'dan yalnızca hesabında etkin bir GhostNote Pro satın alması ya da aboneliği olup olmadığını öğrenir ve Pro özellikleri çevrimdışı da çalışsın diye bu durumu iPad'inde saklar. Abonelikler App Store hesap ayarlarından yönetilir ve iptal edilir. Apple'ın satın alma verilerini nasıl işlediği Apple'ın Gizlilik Politikası'nda açıklanır.</p>
 
         <h2 id="sharing"><span class="num">6.</span>Paylaşma ve dışa aktarma</h2>
         <p>Bir defteri ya da sayfayı dışa aktardığında veya paylaştığında (PDF, resim, yazdırma, Dosyalar'a kaydetme, AirDrop ya da başka bir uygulama) içerik yalnızca gönderdiğin yere gider. Sonrasında ne olacağını alan uygulama ya da kişi belirler.</p>
+        <p>PDF Stüdyosu'ndaki “Web sayfasından PDF'e”, sayfayı tıpkı uygulama içi tarayıcı gibi doğrudan o siteden yükler.</p>
 
         <h2 id="analytics"><span class="num">7.</span>Analiz, izleme ve reklam</h2>
         <p>GhostNote analiz, reklam ya da izleme kodu içermez, kendi başına çökme raporu göndermez ve seni uygulamalar ya da web siteleri arasında izlemez. iPadOS ayarlarında analiz verilerini uygulama geliştiricileriyle paylaşmayı seçtiysen Apple, kendi politikası kapsamında bize anonim ve toplu istatistikler (ör. çökme sayıları) sağlayabilir; bunlar notlarını içermez.</p>
         <p><strong>iPad'indeki teşhis raporları.</strong> iPadOS, Apple'ın MetricKit çerçevesiyle uygulamalara kendi performansları hakkında teknik raporlar verebilir: takılmalar, çökmeler, açılış süreleri, pil, bellek, CPU ve diske yazma kullanımı ile ilgili teknik ayrıntılar (ör. o sırada uygulama kodunun hangi bölümünün çalıştığı). GhostNote, yardım istediğinde bir sorunun incelenebilmesi için bu raporların en yenilerini (yaklaşık 20 tane) yalnızca iPad'inde, uygulamanın özel depolama alanında (Application Support › Diagnostics) saklar. Raporlar not, el yazısı, çizim, resim, ses kaydı, web sayfası ya da tarama geçmişi içermez.</p>
         <ul>
           <li>Bu raporlar <strong>hiçbir zaman kendiliğinden gönderilmez</strong>; ne bize ne de başka birine.</li>
-          <li>iPad'inden yalnızca sen <strong>Ayarlar › Hakkında › Teşhis</strong> bölümünden sistem paylaşım sayfasıyla paylaşmayı seçersen çıkar (ör. destek ekibine e-postayla). Sonrasında alıcının kuralları geçerlidir.</li>
+          <li>iPad'inden yalnızca sen <strong>Ayarlar › Hakkında › Teşhis</strong> bölümünden sistem paylaşım sayfasıyla paylaşmayı seçersen çıkar (ör. bir destek talebine eklemek için). Sonrasında alıcının kuralları geçerlidir.</li>
           <li>Raporları istediğin zaman aynı yerden silebilirsin; GhostNote'u silmek de onları kaldırır. Cihaz yedeklerine dahil edilmezler.</li>
         </ul>
 
