@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="t">
+  <title id="t">Photosynthesis: how plants make food. Lecture slide with a plant, sunlight, CO₂, O₂, water and glucose.</title>
+  <style>
+    text { font-family: -apple-system, system-ui, "SF Pro Display", "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .label { font-size: 48px; font-weight: 650; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF8F1"/>
+      <stop offset="1" stop-color="#EAF2E7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="960" cy="560" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="0.42" cy="0.38" r="0.7">
+      <stop offset="0" stop-color="#FFE7A1"/>
+      <stop offset="0.6" stop-color="#FBC943"/>
+      <stop offset="1" stop-color="#F2AE24"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#2C8746"/>
+      <stop offset="0.55" stop-color="#55AE58"/>
+      <stop offset="1" stop-color="#8FD06F"/>
+    </linearGradient>
+    <linearGradient id="leafSmall" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#2F8A48"/>
+      <stop offset="1" stop-color="#76C163"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7A563B"/>
+      <stop offset="1" stop-color="#5C3F2B"/>
+    </linearGradient>
+    <marker id="ah-sun" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto"><path d="M0.5 0.8 L9.5 5 L0.5 9.2 L2.6 5 Z" fill="#E39B17"/></marker>
+    <marker id="ah-co2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto"><path d="M0.5 0.8 L9.5 5 L0.5 9.2 L2.6 5 Z" fill="#62758A"/></marker>
+    <marker id="ah-o2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto"><path d="M0.5 0.8 L9.5 5 L0.5 9.2 L2.6 5 Z" fill="#1E9C8A"/></marker>
+    <marker id="ah-h2o" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto"><path d="M0.5 0.8 L9.5 5 L0.5 9.2 L2.6 5 Z" fill="#2F7FD1"/></marker>
+    <marker id="ah-glu" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto"><path d="M0.5 0.8 L9.5 5 L0.5 9.2 L2.6 5 Z" fill="#D06A2B"/></marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="1830" cy="110" r="360" fill="#2F8F4E" opacity="0.05"/>
+  <circle cx="70" cy="1040" r="300" fill="#2F8F4E" opacity="0.05"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+
+  <!-- Title -->
+  <text x="960" y="96" text-anchor="middle" font-size="30" font-weight="700" letter-spacing="7" fill="#3E8E6A">OPEN BIOLOGY · LECTURE 4</text>
+  <text x="960" y="190" text-anchor="middle" font-size="100" font-weight="800" letter-spacing="-2" fill="#173F35">Photosynthesis</text>
+  <text x="960" y="250" text-anchor="middle" font-size="40" font-weight="500" fill="#557A6C">How plants make food</text>
+
+  <!-- Sun -->
+  <g transform="translate(210 200)">
+    <g stroke="#F2B233" stroke-width="12" stroke-linecap="round">
+      <line x1="0" y1="-104" x2="0" y2="-140"/>
+      <line x1="52" y1="-90" x2="70" y2="-121"/>
+      <line x1="90" y1="-52" x2="121" y2="-70"/>
+      <line x1="104" y1="0" x2="140" y2="0"/>
+      <line x1="90" y1="52" x2="121" y2="70"/>
+      <line x1="52" y1="90" x2="70" y2="121"/>
+      <line x1="0" y1="104" x2="0" y2="140"/>
+      <line x1="-52" y1="90" x2="-70" y2="121"/>
+      <line x1="-90" y1="52" x2="-121" y2="70"/>
+      <line x1="-104" y1="0" x2="-140" y2="0"/>
+      <line x1="-90" y1="-52" x2="-121" y2="-70"/>
+      <line x1="-52" y1="-90" x2="-70" y2="-121"/>
+    </g>
+    <circle r="80" fill="url(#sun)"/>
+  </g>
+
+  <!-- Sunlight beam -->
+  <g stroke="#E39B17" stroke-linecap="round" fill="none">
+    <path d="M333 317 L700 420" stroke-width="7" stroke-dasharray="1 20" opacity="0.6"/>
+    <path d="M354 268 L721 371" stroke-width="7" stroke-dasharray="1 20" opacity="0.6"/>
+    <path d="M340 292 L756 409" stroke-width="11" marker-end="url(#ah-sun)"/>
+  </g>
+  <text class="label" transform="translate(566 302) rotate(15.7)" text-anchor="middle" fill="#9A6200">Sunlight</text>
+
+  <!-- Soil and roots -->
+  <rect x="610" y="846" width="700" height="66" rx="33" fill="url(#soil)"/>
+  <rect x="622" y="842" width="676" height="12" rx="6" fill="#5FA65A"/>
+  <g stroke="#E6C9A0" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M960 856 C 958 878, 936 890, 904 902"/>
+    <path d="M960 856 C 963 880, 988 891, 1022 900"/>
+    <path d="M960 860 C 960 878, 962 892, 958 904"/>
+    <path d="M934 890 C 924 896, 912 898, 896 894"/>
+    <path d="M988 891 C 998 898, 1010 899, 1028 893"/>
+  </g>
+
+  <!-- Plant -->
+  <path d="M960 852 C 957 790, 966 735, 960 676" stroke="#3C8C4C" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <g transform="translate(958 792) rotate(-58)">
+    <path d="M0 0 C -50 -40, -45 -112, 0 -150 C 45 -112, 50 -40, 0 0 Z" fill="url(#leafSmall)"/>
+    <path d="M0 -6 L0 -128" stroke="#DDF1CF" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <g transform="translate(960 680) rotate(-12)">
+    <path d="M0 0 C -192 -58, -182 -286, 0 -382 C 182 -286, 192 -58, 0 0 Z" fill="url(#leaf)"/>
+    <path d="M0 0 C 192 -58, 182 -286, 0 -382 Z" fill="#0B3B1F" opacity="0.08"/>
+    <g stroke="#E6F5D9" stroke-linecap="round" fill="none" opacity="0.85">
+      <path d="M0 -8 L0 -350" stroke-width="7"/>
+      <path d="M0 -70 Q -56 -96 -112 -104" stroke-width="4.5"/>
+      <path d="M0 -70 Q 56 -96 112 -104" stroke-width="4.5"/>
+      <path d="M0 -150 Q -58 -176 -118 -186" stroke-width="4.5"/>
+      <path d="M0 -150 Q 58 -176 118 -186" stroke-width="4.5"/>
+      <path d="M0 -230 Q -48 -252 -96 -262" stroke-width="4"/>
+      <path d="M0 -230 Q 48 -252 96 -262" stroke-width="4"/>
+      <path d="M0 -296 Q -28 -312 -56 -318" stroke-width="3.5"/>
+      <path d="M0 -296 Q 28 -312 56 -318" stroke-width="3.5"/>
+    </g>
+  </g>
+
+  <!-- CO2 in -->
+  <path d="M325 600 Q 540 600 746 556" stroke="#62758A" stroke-width="11" stroke-linecap="round" fill="none" marker-end="url(#ah-co2)"/>
+  <text class="label" x="298" y="616" text-anchor="end" fill="#47586B">CO₂ in</text>
+
+  <!-- O2 out -->
+  <path d="M1088 418 Q 1240 352 1396 346" stroke="#1E9C8A" stroke-width="11" stroke-linecap="round" fill="none" marker-end="url(#ah-o2)"/>
+  <text class="label" x="1428" y="363" fill="#137565">O₂ out</text>
+
+  <!-- Glucose -->
+  <path d="M1100 548 Q 1260 560 1398 616" stroke="#D06A2B" stroke-width="11" stroke-linecap="round" fill="none" marker-end="url(#ah-glu)"/>
+  <polygon points="1455,594 1479,608 1479,636 1455,650 1431,636 1431,608" fill="#FBE3D1" stroke="#D06A2B" stroke-width="5" stroke-linejoin="round"/>
+  <text class="label" x="1500" y="639" fill="#A44F1C">Glucose</text>
+
+  <!-- H2O from roots -->
+  <path d="M1012 896 L1012 712" stroke="#2F7FD1" stroke-width="11" stroke-linecap="round" fill="none" marker-end="url(#ah-h2o)"/>
+  <text class="label" x="1046" y="818" fill="#1F5FA8">H₂O from roots</text>
+
+  <!-- Equation -->
+  <rect x="470" y="946" width="980" height="96" rx="48" fill="#FFFFFF" fill-opacity="0.78" stroke="#CFE0CC" stroke-width="2"/>
+  <text x="960" y="1011" text-anchor="middle" font-size="54" font-weight="600" fill="#173F35">6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</text>
+</svg>

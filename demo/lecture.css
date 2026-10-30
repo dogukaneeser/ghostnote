@@ -1,0 +1,69 @@
+/* Demo course page used only for GhostNote App Store screenshots. Fictional course, no real brand. */
+:root {
+  --bg: #F5F6F4;
+  --surface: #FFFFFF;
+  --text: #1A1F1D;
+  --muted: #5E6763;
+  --faint: #8A928E;
+  --line: #E3E7E4;
+  --brand: #1F6F5C;
+  --brand-soft: #E5F0EC;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.topbar { background: var(--surface); border-bottom: 1px solid var(--line); }
+.topbar .inner { max-width: 1020px; margin: 0 auto; padding: 0 20px; height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.course { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.mark { width: 30px; height: 30px; flex: none; display: block; }
+.course-name { font-weight: 700; font-size: 17px; letter-spacing: -0.01em; white-space: nowrap; }
+.divider { width: 1px; height: 20px; background: var(--line); margin: 0 4px; }
+.lecture-no { color: var(--muted); font-size: 15px; font-weight: 500; white-space: nowrap; }
+.lang { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: var(--faint); white-space: nowrap; }
+.lang a { color: var(--faint); text-decoration: none; padding: 4px 6px; border-radius: 6px; }
+.lang a:hover { color: var(--text); }
+.lang [aria-current="true"] { color: var(--text); padding: 4px 6px; }
+
+main { max-width: 1020px; margin: 0 auto; padding: 20px 20px 48px; }
+.player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0E1412 center / cover no-repeat;
+  box-shadow: 0 1px 2px rgba(16, 24, 20, 0.08), 0 14px 36px -16px rgba(16, 24, 20, 0.35);
+}
+.player video { position: absolute; inset: 0; width: 100%; height: 100%; display: block; background: transparent; object-fit: contain; }
+
+.info { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 28px; margin-top: 22px; align-items: start; }
+h1 { margin: 0 0 6px; font-size: 28px; line-height: 1.2; letter-spacing: -0.02em; font-weight: 700; }
+.meta { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
+.about { margin: 0 0 14px; color: #36403C; max-width: 60ch; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.tags li { font-size: 13px; font-weight: 600; color: var(--brand); background: var(--brand-soft); border-radius: 999px; padding: 4px 11px; }
+
+.chapters { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 6px 8px; }
+.chapters h2 { margin: 0 12px 6px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); font-weight: 700; }
+.chapters ol { margin: 0; padding: 0; list-style: none; }
+.chapters li { display: flex; gap: 14px; align-items: baseline; padding: 9px 12px; border-radius: 10px; }
+.chapters li:first-child { background: var(--brand-soft); }
+.chapters time { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--brand); font-size: 14.5px; min-width: 44px; }
+.chapters span { font-size: 15.5px; }
+
+@media (max-width: 760px) {
+  .info { grid-template-columns: 1fr; gap: 18px; }
+  h1 { font-size: 23px; }
+  .player { border-radius: 10px; }
+  main { padding: 12px 12px 36px; }
+  .lecture-no, .divider { display: none; }
+}
